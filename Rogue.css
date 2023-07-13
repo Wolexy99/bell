@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+}
+
+header{
+    width: 100%;
+}
+
+ul{
+    list-style-type: none;
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 50px;
+    animation-name: animal;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    color: green;
+    text-decoration: none;
+    padding: 15px;
+}
+
+
+.image img{
+    background-size: cover;
+    display: inline-block;
+    margin: 30px;
+    margin-right: 50px;
+    width: 100%;
+}
+label{
+    float: left;
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+span{
+    color: green;
+}
+
+figcaption{
+    color: green;
+    margin-left: 30px;
+}
+
+@keyframes animal{
+    0%{
+        transform: translateY(-250px);
+    }
+
+    20%{
+        transform: translateY(30px);
+    }
+} 
+
+p{
+    margin-top: 20px;
+    margin-left: 30px;
+    word-wrap: break-word;
+}
+
+table, tr, th, td, caption{
+    border: 1px solid #eee;
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 2rem;
+    margin-left: 30px;
+}
+
+h4{
+    text-align: center;
+    margin-top: 20px;
+}
+i{
+    color: green;
+}
+
+@media screen and (max-width: 600px) {
+    header, table, .image img{
+        width: 100%;
+        font-size: 15px;
+    }
+}

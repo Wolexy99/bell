@@ -1,0 +1,157 @@
+body{
+    min-height: 100vh;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    position: absolute;
+    display: none;
+    min-width: 600px;
+    padding: 16px 18px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #f9f9f9;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.drop-btn{
+    color: white;
+    background-color: green;
+    padding: 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.drop{
+    position: relative;
+    display: inline-block;
+}
+
+.down{
+    position: absolute;
+    display: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding: 16px 18px;
+    background-color: #f9f9f9;
+    z-index: 1;
+    min-width: 60px;
+}
+
+.down a{
+    text-decoration: none;
+    color:aquamarine;color: black;
+    display: block;
+    padding: 12px 16px;
+}
+
+.drop:hover .down{
+    display: block;
+}
+
+.drop:hover .drop-btn{
+    background-color: #3e8e41;
+}
+
+.align-btn{
+    color: antiquewhite;
+    background-color: green;
+    padding: 16px;
+    border: none;
+}
+
+.aligned{
+    position: relative;
+    display: inline-block;
+}
+
+.align{
+    position: absolute;
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 16px 18px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+}
+
+.align a{
+    display: block;
+    padding: 12px 14px;
+    text-decoration: none;
+}
+
+.aligned:hover .align{
+    display: block;
+}
+
+.float-btn{
+    color: antiquewhite;
+    background-color: green;
+    padding: 16px;
+    border: none;
+}
+
+.float{
+    position: relative;
+    display: block;
+    float: right;
+}
+
+.floated{
+    position: absolute;
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 16px 18px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    right: 0px;
+}
+
+.floated a{
+    display: block;
+    padding: 12px 14px;
+    text-decoration: none;
+}
+
+.float:hover .floated{
+    display: block;
+}
+
+.image{
+    position: relative;
+    display: inline-block;
+}
+
+.imaged{
+    position: absolute;
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-height: 100px;
+}
+
+.image:hover .imaged{
+    display: block;
+}
+
+a[target]{
+    background-color: yellow;
+}
+
+input[type="text"]{
+    background-color: #3e8e41;
+    margin-bottom: 10px;
+    display: block;
+    width: 150px;
+}
+
+input[type="button"]{
+    margin-left: 30px;
+    display: block;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="logo.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Page</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="navbar">
+            <div class="logo">
+                <header>LOGO .</header>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                </ul>
+            </div>
+
+            <div class="main">
+                <button class="sign in" onclick="login()" id="login-btn">Sign In</button>
+
+                <button class=" sign up" onclick="register()" id="register-btn">Sign Up</button>
+            </div>
+
+            <div class="menu-btn">
+                <i class='bx bx-menu'></i>
+            </div>
+        </div>
+
+        <!--------Login Page------->
+
+        <div class="form">
+            <div class="Register-page" id="login">
+                <div class="acc">
+                    <p>Have an account? <a href="Login"></a></p>
+
+                    <h3>Sign Up</h3>
+                </div>
+
+                <div class="two-form">
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Firstname" required>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Lastname" required>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <input type="email" class="input-field" placeholder="Email" required>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" class="input-field" placeholder="Password" required>
+                </div>
+
+                <div class="input-box">
+                    <input type="submit" value="Register" name="Register">
+                </div>
+
+                <div class="terms">
+                    <input type="checkbox" id="check">
+
+                    <label for="check">Remember Me</label>
+                </div>
+
+                <div class="terms">
+                    <p>Terms & Conditions</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

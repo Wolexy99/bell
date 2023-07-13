@@ -1,0 +1,25 @@
+.text1{
+    white-space: nowrap;
+    border: 1px solid #000;
+    width: 200px;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+.text2{
+    white-space: nowrap;
+    border: 1px solid #000;
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.text2:hover, .text1:hover{
+    overflow: visible;
+}
+
+.test{
+    width: 11em;
+    border: 1px solid #000000;
+    word-wrap: break-word;
+}

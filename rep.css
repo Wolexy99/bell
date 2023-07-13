@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea{
+    padding: 12px;
+    border-radius: 4px;
+    width: 100%;
+    background-color: #ccc;
+    resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+
+input[type=submit]{
+    float: right;
+    color: white;
+    background-color: greenyellow;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    background-color: green;
+}
+
+.container{
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+.row-1{
+    width: 25%;
+    float: left;
+    margin-top: 20px;
+}
+
+.row-2{
+    width: 75%;
+    float: left;
+    margin-top: 20px;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 600px) {
+    .row-1, .row-2, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
+}
+
+body{
+    counter-reset: section;
+}
+
+h1{
+    counter-reset: subsection;
+}
+
+h1::before{
+    counter-increment: section;
+    content: "Section " counter(section)": ";
+}
+
+h2::before{
+    counter-increment: subsection;
+    content: counter(section)"." counter(subsection)" ";
+}
+
+#rcorners1{
+    background-color: green;
+    width: 200px;
+    height: 150px;
+    border-radius: 50px/15px;
+    padding: 20px;
+}
+
+#rcorners2{
+    border-radius: 50%;
+    padding: 35px;
+    background-color: green;
+    width: 200px;
+    height: 150px;
+}
+
+#rcorners3{
+    border-radius: 15px 50px 30px 8px;
+    background-color: green;
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+}
+
+.borderimage1{
+    border: 20px solid transparent;
+    border-image: url("taco.jpg") 30% round;
+    padding: 20px;
+}
+
+.borderimage2{
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image-source: url("website.jpg");
+    border-image-repeat: stretch;
+    border-image-slice: 20%   ;
+}

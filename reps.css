@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 0 0 0;
+    min-height: 200vh;
+}
+.responsive{
+    background-color: #ccc;
+    padding: 10px;
+    padding-left: 13px;
+
+}
+
+input[type=text], select, textarea{
+    width: 30%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type=submit]{
+    background-color: green;
+    color: whitesmoke;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.rep-1{
+    float: left;
+    width: 25%;
+    padding: 20px;
+}
+
+.rep-2{
+    float: left;
+    width: 75%;
+    padding: 15px;
+}
+
+.responsive::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input[type=submit]:hover{
+    background-color: lightgreen;
+    color: black;
+}
+
+input[type=text]:hover, select:hover, textarea:hover{
+    width: 80%;
+}
+
+.conter{
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.cont{
+    position: absolute;
+    display: none;
+    min-width: 600px;
+    padding: 16px 18px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color:rgba(255, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.conter:hover .cont{
+    display: block;
+}
+
+#grad{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #888;
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    height: 55px;
+}
+
+#gradient{
+    height: 200px;
+    width: 200px;
+    background-image: conic-gradient(red, yellow, green, blue);
+    border-radius: 50%;
+    padding: 50px;
+}
+
+h1{
+    color: coral;
+    text-shadow: -1px 0 black, 0 1px black, 0 -1px black;
+}
+
+h3{
+    background-color: coral;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    box-shadow: 10px 10px 5px lightslategray;
+}
+
+.animal{
+    position: absolute;
+    display: inline-block;
+}
+
+.wild-animal{
+    position: absolute;
+    display: none;
+    min-width: 600px;
+    padding: 12px 18px;
+    background-color: goldenrod;
+    box-shadow: 12px 12px 5px 0 rgba(0,0,0,0.2);
+}
+
+.animal:hover .wild-animal{
+    display: block;
+}
+@media screen and (max-width:600px) {
+    .rep-1, .rep-2, input[type=submit]{
+        width: 100%;
+    }
+    #grad{
+        width: 100%;
+    }
+}
+

@@ -1,0 +1,52 @@
+h1{
+    border: 1px solid black;
+    padding: 15px;
+    width: 50%;
+    height: 70px;
+    box-shadow: 10px 10px lightblue, 15px 15px lightgreen, 20px 20px lightcoral;
+    margin-bottom: 50px;
+}
+
+h2{
+    border: 1px solid black;
+    padding: 15px;
+    width: 50%;
+    height: 70px;
+    box-shadow: 5px 5px 8px blue, 10px 10px 8px green, 15px 15px 15px red;
+}
+
+h3{
+    border: 1px solid black;
+    padding: 15px;
+    width: 50%;
+    height: 70px;
+    box-shadow: 5px 5px 8px blue inset, 10px 10px 8px green inset, 15px 15px 15px red inset;
+}
+
+h4{
+    border: 1px solid black;
+    padding: 15px;
+    width: 50%;
+    height: 70px;
+    box-shadow: 5px 5px 8px 12px blue, 10px 10px 8px 12px green, 15px 15px 15px 12px red;
+}
+
+.cards{
+    width: 250px;
+    height: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0 ,0, 1.9);
+    margin-top: 50px;
+}
+
+.head{
+    background-color: green;
+    color: white;
+    padding: 20px;
+    font-size: 40px;
+}
+
+.container{
+    padding: 10px;
+}
+

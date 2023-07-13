@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.menu{
+    background: green;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 90vh;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    margin: auto;
+    width: 90%;
+}
+
+.navbar .logo{
+    width: 120px;
+    margin-top: -2px;
+    margin-left: -3px;
+    cursor: pointer;
+}
+
+ul{
+    margin-left: -4%;
+}
+
+ul li{
+    display: inline-block;
+    padding: 16px 12px;
+    list-style: none;
+}
+
+ul li a{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: -3px;
+    text-decoration: none;
+    transition: .5s ease;
+}
+
+ul li a:hover{
+    color: orangered;
+}
+
+.info{
+    margin-top: 7%;
+    margin-left: 1%;
+}
+
+.info h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.info h3{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    line-height: 50px;
+}
+
+.info a{
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    margin-top: -4px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    display: inline-block;
+    background: black;
+    text-decoration: none;
+}
+
+.info a:hover{
+    color: green;
+}
+
+.info span{
+    color: orangered;
+}
+
+.icon{
+    margin-top: 5px;
+    margin-left: 6px;
+}
+
+.icon a{
+    text-decoration: none;
+    color: black;
+}
+
+.icon ion-icon{
+    margin-left: 5px;
+    margin-top: 6px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.icon ion-icon:hover{
+    color: purple;
+}
+
+.image{
+    width: 30%;
+    height: 60%;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+}
+
+.image img{
+    position: absolute;
+    height: 140%;
+    left: 40%;
+    transform: translate(-50); 
+    bottom: 0;
+    transition: left 2s ease;
+}
+
+.image:hover .web{
+    left: 55%;
+}

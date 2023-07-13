@@ -1,0 +1,107 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,500&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1.5em;
+    min-height: 100vh;
+    background-color: #475569;
+    background-image: radial-gradient(whitesmoke, #475569);
+    font-family: 'poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+header, nav, main, footer{
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
+    text-align: center;
+}
+
+header, footer{
+    position: sticky;
+    background-color: #1e293b;
+    color: whitesmoke;
+}
+
+nav{
+    background-color: #fff;
+    color: #000;
+    padding: 0.5rem;
+    border-bottom: 2px solid #000;
+}
+header{
+    top: 0;
+}
+
+main{
+    flex-grow: 1;
+}
+
+footer{
+    bottom: 0;
+}
+
+/* || SMALL */
+@media screen and (min-width: 576px){
+    body{
+        background-color: green;
+        background-image: radial-gradient(whitesmoke, green);
+    }
+    nav{
+        display: none;
+    }
+}
+/* || MEDIUM */
+@media screen and (min-width: 768px){
+    body{
+        background-color: gold;
+        background-image: radial-gradient(whitesmoke, gold);
+    }
+    nav{
+        display: none;
+    }
+}
+/* || LARGE */
+@media screen and (min-width: 992px){
+    body{
+        background-color: firebrick;
+        background-image: radial-gradient(whitesmoke, firebrick);
+    }
+    nav{
+        display: none;
+    }
+}
+/* || XL */
+@media screen and (min-width: 1100px){
+    body{
+        background-color: rebeccapurple;
+        background-image: radial-gradient(whitesmoke, rebeccapurple);
+    }
+    nav{
+        display: none;
+    }
+}
+/* || mobile device landscape */
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4){
+    body{
+        background-color: dodgerblue;
+        background-image: radial-gradient(whitesmoke, dodgerblue);
+    }
+    nav{
+        display: none;
+    }
+    h1, h2{
+        font-size: 1.5rem;
+    }
+    nav{
+        display: none;
+    }
+}

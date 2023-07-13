@@ -1,0 +1,117 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container{
+    max-width: 500px;
+    min-height: 400px;
+    margin-inline: auto;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 1rem;
+    align-content: center;
+}
+
+.box{
+    min-width: 100px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+    flex-basis: 250px;
+}
+
+.box:nth-child(2){
+    flex-shrink: 2;
+    order: 0;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: 50px auto 50px;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd hd"
+    "mn mn mn mn mn mn mn sb sb"
+    "ft ft ft ft ft ft ft ft ft";
+    column-gap: 0.5rem;
+}
+
+.el{
+    background-color: rebeccapurple;
+    color: white;
+    display: grid;
+    place-content: center;
+}
+
+.header{
+    grid-area: hd;
+}
+
+.sidebar{
+    grid-area: sb;
+}
+
+.footer{
+    grid-area: ft;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-auto-rows: minmax(150px, auto);
+    gap: 1rem;
+    min-height: 80vh;
+    grid-area: mn;
+}
+
+
+
+.box{
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+.box:first-child{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: blue;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.box:nth-child(2){
+    background-color: purple;
+    grid-column: 1/5;
+    grid-row: 3/4;
+}
